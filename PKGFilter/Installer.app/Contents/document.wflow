@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)		tell application "Terminal"		set currentTab to do script ("pwd")				set fileName to "FilterPicturesFromDownloads.workflow/"		set destPathWithSpaces to "~/Library/Workflows/Applications/Folder\\ Actions/FilterPicturesFromDownloads.workflow/"				do script ("cd " &amp; pathToMe) in currentTab		do script ("cd ..") in currentTab		do script ("sudo cp -R " &amp; fileName &amp; " " &amp; destPathWithSpaces) in currentTab	end tell	return inputend run</string>
+					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)	set pathToFilterFolder to "~/Documents/DownloadedPackages"		tell application "Terminal"		set currentTab to do script ("pwd")				set fileName to "FilterPKGFromDownloads.workflow/"		set destPathWithSpaces to "~/Library/Workflows/Applications/Folder\\ Actions/FilterPKGFromDownloads.workflow/"		do script ("mkdir " &amp; pathToFilterFolder) in currentTab		do script ("cd " &amp; pathToMe) in currentTab		do script ("cd ..") in currentTab		do script ("sudo cp -R " &amp; fileName &amp; " " &amp; destPathWithSpaces) in currentTab			end tell	return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -75,8 +75,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>AF167A00-A8FC-4B24-8866-49F4A686337C</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>347694E6-634A-4F9F-A8F5-38A7EEBAEA5F</string>
 				<key>UnlocalizedApplications</key>
@@ -107,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>449.000000:472.000000</string>
+				<string>449.000000:493.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
