@@ -1,0 +1,5 @@
+Double click “Installer”
+
+You may have to type your password into the terminal that pops up
+
+Enjoy!
